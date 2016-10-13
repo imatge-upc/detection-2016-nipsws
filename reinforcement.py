@@ -4,7 +4,7 @@ from keras import initializations
 from keras.initializations import normal, identity
 from keras.layers.core import Dense, Dropout, Activation, Flatten
 from keras.optimizers import RMSprop, SGD, Adam
-from getFeatures import *
+from features import *
 
 # Different actions that the agent can do
 number_of_actions = 6

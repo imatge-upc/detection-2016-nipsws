@@ -13,10 +13,10 @@ from scipy import ndimage
 from keras.preprocessing import image
 from sklearn.preprocessing import OneHotEncoder
 
-from getFeatures import get_image_descriptor_for_image, obtain_compiled_vgg_16, vgg_16, \
-    get_conv_image_descriptor_for_image
-from parseXMLofAnnotations import *
-from imageHelper import *
+from features import get_image_descriptor_for_image, obtain_compiled_vgg_16, vgg_16, \
+    get_conv_image_descriptor_for_image, calculate_all_initial_feature_maps
+from parse_xml_annotations import *
+from image_helper import *
 from metrics import *
 from visualization import *
 from reinforcement import *

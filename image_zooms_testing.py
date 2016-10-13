@@ -12,16 +12,14 @@ import random
 from scipy import ndimage
 from keras.preprocessing import image
 from sklearn.preprocessing import OneHotEncoder
-# from sklearn.metrics import average_precision_score
 
-from getFeatures import get_image_descriptor_for_image, obtain_compiled_vgg_16, vgg_16, \
+from features import get_image_descriptor_for_image, obtain_compiled_vgg_16, vgg_16, \
     get_conv_image_descriptor_for_image, calculate_all_initial_feature_maps
-from parseXMLofAnnotations import *
-from imageHelper import *
+from parse_xml_annotations import *
+from image_helper import *
 from metrics import *
 from visualization import *
 from reinforcement import *
-
 
 def get_state_2(history_vector,  region_descriptor):
     history_vector = np.reshape(history_vector, (24, 1))

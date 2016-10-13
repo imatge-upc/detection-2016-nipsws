@@ -23,15 +23,6 @@ from visualization import *
 from reinforcement import *
 
 
-
-# ACTIONS
-# UP-LEFT 1
-# UP-RIGHT 2
-# DOWN-LEFT 3
-# DOWN-RIGHT 4
-# CENTER 5
-# TRIGGER 6
-
 parser = argparse.ArgumentParser(description='Epoch:')
 parser.add_argument("-n", metavar='N', type=int)
 args = parser.parse_args()
@@ -47,7 +38,7 @@ if __name__ == "__main__":
 
     path_font = "/usr/share/fonts/truetype/freefont/FreeSansBold.ttf"
     path_voc = "/imatge/mbellver/workspace/matlab/o2p/o2p-release1/VOC_experiment/VOC_UCM/"
-    path_voc2 = "./VOCdevkit/VOC2007/"
+    path_voc2 = "/imatge/mbellver/tensorflow/Efficient-search/rl_quadtree/VOCdevkit/VOC2007/"
     path_vgg = '/imatge/mbellver/workspace/matlab/o2p/o2p-release1/VOC_experiment/vgg16_weights.h5'
     # path_model="models_planes_4/"
     # path_testing_folder = './fast_testing'

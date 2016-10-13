@@ -28,7 +28,7 @@ def get_state_2(history_vector,  region_descriptor):
 if __name__ == "__main__":
     # VOC_test_path='/gpfs/projects/bsc31/bsc31429/VOC2007'
     # VOC_test_path = '/gpfs/projects/bsc31/bsc31429/VOC2007_test'
-    voc_test_path = './VOCdevkit/VOC2007'
+    voc_test_path = "/imatge/mbellver/tensorflow/Efficient-search/rl_quadtree/VOCdevkit/VOC2007"
     # VOC_test_path = "/imatge/mbellver/workspace/matlab/o2p/o2p-release1/VOC_experiment/VOC_UCM/"
     # VOC_train_path = '/gpfs/projects/bsc31/bsc31429/VOC2012_train'
     # font_path="/usr/share/fonts/liberation/LiberationMono-Regular.ttf"

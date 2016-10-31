@@ -29,12 +29,13 @@ A joint collaboration between:
 [upc-web]: http://www.upc.edu/?set_language=en 
 [etsetb-web]: https://www.etsetb.upc.edu/en/ 
 [gpi-web]: https://imatge.upc.edu/web/ 
-[bsc-web]: http://www.bsc.es
+[bsc-web]: http://www.bsc.es 
+
 
 [logo-upc]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/upc.jpg "Universitat Politecnica de Catalunya (UPC)"
 [logo-etsetb]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/etsetb.png "ETSETB TelecomBCN"
 [logo-gpi]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/gpi.png "UPC Image Processing Group"
-[logo-bsc]: http://www.bsc.es/actris/sites/default/files/logos/BSC-logo%201.jpg "Barcelona Supercomputing Center"
+[logo-bsc]: <img src="http://www.bsc.es/actris/sites/default/files/logos/BSC-logo%201.jpg" width="48"> "Barcelona Supercomputing Center"
 
 ## Publication
 ### Abstract

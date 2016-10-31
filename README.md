@@ -55,7 +55,7 @@ This python code enables to both train and test each of the two models proposed 
 First of all the weights of VGG-16 should be downloaded from the following link [VGG-16 weights].
 
 
-[VGG-16 weights] https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view?usp=sharing
+[VGG-16 weights]: https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view?usp=sharing
 
 
 

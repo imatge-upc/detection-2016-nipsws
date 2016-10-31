@@ -10,13 +10,18 @@ from scipy import interpolate
 import scipy.ndimage
 import time
 
+# the feature size is of 7x7xp, being p the number of channels
 feature_size = 7
+# the relative scale reduction of the shallower feature map compared to the initial image input
 scale_reduction_shallower_feature = 16
+# the relative scale reduction of the deeper feature map compared to the initial image input
 scale_reduction_deeper_feature = 32
+# scaling of the input image
 factor_x_input = float(1)
 factor_y_input = float(1)
 
 
+# Interpolation of 2d features for a single channel of a feature map
 def interpolate_2d_features(features):
     out_size = feature_size
     x = np.arange(features.shape[0])
@@ -29,6 +34,7 @@ def interpolate_2d_features(features):
     return kernel_out
 
 
+# Interpolation 2d of each channel, so we obtain 3d interpolated feature maps
 def interpolate_3d_features(features):
     new_features = np.zeros([512, feature_size, feature_size])
     for i in range(features.shape[0]):
@@ -62,6 +68,7 @@ def get_feature_maps(model, img):
     return [get_feature_map_4(model, img), get_feature_map_8(model, img)]
 
 
+# get deeper feature map
 def get_feature_map_8(model, im):
     im = im.astype(np.float32)
     im[:, :, 0] -= 103.939
@@ -77,6 +84,7 @@ def get_feature_map_8(model, im):
     return feature_map
 
 
+# get shallower feature map
 def get_feature_map_4(model, im):
     im = im.astype(np.float32)
     im[:, :, 0] -= 103.939
@@ -96,6 +104,8 @@ def crop_roi(feature_map, coordinates):
     return feature_map[:, coordinates[0]:coordinates[0]+coordinates[2], coordinates[1]:coordinates[1]+coordinates[3]]
 
 
+# this method decides whether to use the deeper or the shallower feature map
+# and then crops and interpolates if necessary the features to obtain a final descriptor of 7x7xp
 def obtain_descriptor_from_feature_map(feature_maps, region_coordinates):
     initial_width = region_coordinates[2]*factor_x_input
     initial_height = region_coordinates[3]*factor_y_input
@@ -127,30 +137,16 @@ def obtain_descriptor_from_feature_map(feature_maps, region_coordinates):
     roi = crop_roi(feature_map, new_coordinates)
     if roi.shape[1] < feature_size & roi.shape[2] < feature_size:
         features = interpolate_3d_features(roi)
-        # features = interpolate_3d_features(roi)
     elif roi.shape[2] < feature_size:
-        # roi2 = np.zeros([512, roi.shape[1], feature_size])
-        # roi2[:, 0: roi.shape[1], 0:roi.shape[2]] = roi
-        # features = extract_features_from_roi(roi2)
         features = interpolate_3d_features(roi)
     elif roi.shape[1] < feature_size:
-        # roi2 = np.zeros([512, feature_size, roi.shape[2]])
-        # roi2[:, 0: roi.shape[1], 0:roi.shape[2]] = roi
-        # features = extract_features_from_roi(roi2)
         features = interpolate_3d_features(roi)
     else:
         features = extract_features_from_roi(roi)
     return features
 
 
-def interpolate_features_from_roi(roi):
-    roi_width = roi.shape[1]
-    roi_height = roi.shape[2]
-    features = np.zeros([512, feature_size, feature_size])
-    features[:, 0:roi_width, 0:roi_height] = roi
-    return features
-
-
+# ROI-pooling features
 def extract_features_from_roi(roi):
     roi_width = roi.shape[1]
     roi_height = roi.shape[2]

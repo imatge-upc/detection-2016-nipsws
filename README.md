@@ -18,7 +18,7 @@
 [bellver-photo]:  https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/img/miriam.jpg "Míriam Bellver"
 [giro-photo]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/img/giro.jpg "Xavier Giro-i-Nieto"
 [marques-photo]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/img/marques.jpg "Ferran Marques"
-[satoh-photo]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/img/JordiTorres.jpg "Jordi Torres"
+[torres-photo]:  http://githubusercontent.com/imatge-upc/detection-2016-nipsws/img/JordiTorres.jpg  "Jordi Torres"
 
 A joint collaboration between:
 

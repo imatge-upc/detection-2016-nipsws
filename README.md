@@ -22,7 +22,7 @@
 
 A joint collaboration between:
 
-|![logo-bsc] | ![logo-upc] | ![logo-etsetb] | ![logo-gpi]  |
+|<img src="http://www.bsc.es/actris/sites/default/files/logos/BSC-logo%201.jpg" width="200"> | ![logo-upc] | ![logo-etsetb] | ![logo-gpi]  |
 |:-:|:-:|:-:|:-:|
 | [Barcelona Supercomputing Center][bsc-web] | [Universitat Politecnica de Catalunya (UPC)][upc-web]   | [UPC ETSETB TelecomBCN][etsetb-web]  | [UPC Image Processing Group][gpi-web] |
 
@@ -35,7 +35,6 @@ A joint collaboration between:
 [logo-upc]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/upc.jpg "Universitat Politecnica de Catalunya (UPC)"
 [logo-etsetb]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/etsetb.png "ETSETB TelecomBCN"
 [logo-gpi]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/gpi.png "UPC Image Processing Group"
-[logo-bsc]: <img src="http://www.bsc.es/actris/sites/default/files/logos/BSC-logo%201.jpg" width="48"> "Barcelona Supercomputing Center"
 
 ## Publication
 ### Abstract

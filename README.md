@@ -15,14 +15,14 @@
 [torres-web]: http://www.jorditorres.org/
 [marques-web]:https://imatge.upc.edu/web/people/ferran-marques
 
-[bellver-photo]:  https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/img/miriam.jpg "Míriam Bellver"
-[giro-photo]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/img/giro.jpg "Xavier Giro-i-Nieto"
-[marques-photo]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/img/marques.jpg "Ferran Marques"
+[bellver-photo]:  https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/authors/miriam.jpg "Míriam Bellver"
+[giro-photo]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/authors/giro.jpg "Xavier Giro-i-Nieto"
+[marques-photo]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/authors/marques.jpg "Ferran Marques"
 [torres-photo]:  https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/img/master/JordiTorres.jpg  "Jordi Torres"
 
 A joint collaboration between:
 
-|<img src="http://www.bsc.es/actris/sites/default/files/logos/BSC-logo%201.jpg" width="200"> | ![logo-upc] | ![logo-etsetb] | ![logo-gpi]  |
+|<img src=https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/logos/bsc.jpg width="200"> | ![logo-upc] | ![logo-etsetb] | ![logo-gpi]  |
 |:-:|:-:|:-:|:-:|
 | [Barcelona Supercomputing Center][bsc-web] | [Universitat Politecnica de Catalunya (UPC)][upc-web]   | [UPC ETSETB TelecomBCN][etsetb-web]  | [UPC Image Processing Group][gpi-web] |
 
@@ -32,9 +32,9 @@ A joint collaboration between:
 [bsc-web]: http://www.bsc.es 
 
 
-[logo-upc]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/upc.jpg "Universitat Politecnica de Catalunya (UPC)"
-[logo-etsetb]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/etsetb.png "ETSETB TelecomBCN"
-[logo-gpi]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/gpi.png "UPC Image Processing Group"
+[logo-upc]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/logos/upc.jpg "Universitat Politecnica de Catalunya (UPC)"
+[logo-etsetb]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/logos/etsetb.png "ETSETB TelecomBCN"
+[logo-gpi]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/logos/gpi.png "UPC Image Processing Group"
 
 ## Publication
 ### Abstract
@@ -52,11 +52,12 @@ This python code enables to both train and test each of the two models proposed 
 
 ### Setup
 
-First of all the weights of VGG-16 should be downloaded from the following link [VGG-16 weights].
+First of all the weights of VGG-16 should be downloaded from the following link [VGG-16 weights]. If you want to use some pre-trained models for the Deep Q-network, they can be downloaded in the following links [Image Zooms model] and [Pool45 Crops model].You should put them inside the corresponding folders, the Image Zooms model in the models_image_zooms, and the Pool45 Crops model in the models_pool45_crops folder. 
 
 
 [VGG-16 weights]: https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view?usp=sharing
-
+[Image Zooms model]: 
+[Pool45 Crops model]:
 
 
 ### Usage

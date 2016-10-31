@@ -32,8 +32,7 @@ A joint collaboration between:
 [logo-bsc]:https://github.com/imatge-upc/detection-2016-nipsws/blob/master/logos/bsc320x86.jpg?raw=true "Barcelona Supercomputing Center"
 [logo-gpi]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/logos/gpi320x70.png?raw=true "UPC Image Processing Group"
 
-## Publication
-### Summary
+## Summary
 
 We present a method for performing hierarchical object detection in images guided by a deep reinforcement learning agent. The key idea is to focus on those parts of the image that contain richer information and zoom on them. We train an intelligent agent that, given an image window, is capable of deciding where to focus the attention among five different predefined region candidates (smaller windows). This procedure is iterated providing a hierarchical image analysis. We compare two different candidate proposal strategies to guide the object search: with and without overlap. 
 
@@ -47,7 +46,25 @@ Experiments indicate better results for the overlapping candidate proposal strat
 
 ![Qualitative results](https://github.com/imatge-upc/detection-2016-nipsws/blob/master/results.png?raw=true)
 
+## Publication
 
+Our workshop paper will soon be available on arXiv (early November 2016).
+
+Please cite with the following Bibtex code:
+
+````
+@InProceedings{Bellver_2016_NIPSWS,
+author = {Bellver, Miriam and Giro-i-Nieto, Xavier and Marques, Ferran and Torres, Jordi},
+title = {Hierarchical Object Detection with Deep Reinforcement Learning},
+booktitle = {Deep Reinforcement Learning Workshop, NIPS},
+month = {December},
+year = {2016}
+}
+```
+
+You may also want to refer to our publication with the more human-friendly Chicago style:
+
+*Miriam Bellver, Xavier Giro-i-Nieto, Ferran Marques, and Jordi Torres. "Hierarchical Object Detection with Deep Reinforcement Learning." In Deep Reinforcement Learning Workshop (NIPS). 2016.*
 
 ## Code Instructions
 

@@ -48,9 +48,14 @@ Experiments indicate better results for the overlapping candidate proposal strat
 
 ## Code Instructions
 
-
+This python code enables to both train and test each of the two models proposed in the paper. The image zooms model extracts features for each region visited, whereas the pool45 crops model extracts features just once and then ROI-pools features for each subregion. In this section we are going to describe how to use the cod.
 
 ### Setup
+
+First of all the weights of VGG-16 should be downloaded from the following link [VGG-16 weights].
+
+
+[VGG-16 weights] https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view?usp=sharing
 
 
 

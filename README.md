@@ -3,7 +3,7 @@
 |  ![NIPS 2016 logo][logo-nips] | Paper accepted at [Deep Reinforcement Learning Workshop, NIPS 2016](https://sites.google.com/site/deeprlnips2016/)   |
 |:-:|---|
 
-[logo-nips]: http://hci-kdd.org/wordpress/wp-content/uploads/2014/11/Neural-Information-Processing-2016.jpg "NIPS 2016 logo"
+[logo-nips]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/logos/nips500x95.png?raw=true "NIPS 2016 logo"
 
 | ![Míriam Bellver][bellver-photo]  | ![Xavier Giro-i-Nieto][giro-photo]  | ![Ferran Marqués][marques-photo]  | ![Jordi Torres][torres-photo]  |
 |:-:|:-:|:-:|:-:|:-:|

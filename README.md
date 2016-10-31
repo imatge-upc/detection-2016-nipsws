@@ -22,17 +22,15 @@
 
 A joint collaboration between:
 
-|![logo-bsc] | ![logo-upc] | ![logo-gpi]  |
+|![logo-bsc] | ![logo-gpi]  |
 |:-:|:-:|:-:|
-| [Barcelona Supercomputing Center][bsc-web] | [Universitat Politecnica de Catalunya (UPC)][upc-web]   | [UPC ETSETB TelecomBCN][etsetb-web]  | [UPC Image Processing Group][gpi-web] |
+| [Barcelona Supercomputing Center][bsc-web] | [UPC Image Processing Group][gpi-web] |
 
-[upc-web]: http://www.upc.edu/?set_language=en 
 [gpi-web]: https://imatge.upc.edu/web/ 
 [bsc-web]: http://www.bsc.es 
 
-[logo-bsc]:https://github.com/imatge-upc/detection-2016-nipsws/blob/master/logos/bsc.jpg?raw=true "Barcelona Supercomputing Center"
-[logo-upc]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/logos/upc.jpg?raw=true "Universitat Politecnica de Catalunya (UPC)"
-[logo-gpi]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/logos/gpi.png?raw=true "UPC Image Processing Group"
+[logo-bsc]:https://github.com/imatge-upc/detection-2016-nipsws/blob/master/logos/bsc320x86.jpg?raw=true "Barcelona Supercomputing Center"
+[logo-gpi]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/logos/gpi320x70.png?raw=true "UPC Image Processing Group"
 
 ## Publication
 ### Abstract

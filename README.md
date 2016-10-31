@@ -22,8 +22,8 @@
 
 A joint collaboration between:
 
-|![logo-bsc] | ![logo-upc] | ![logo-etsetb] | ![logo-gpi]  |
-|:-:|:-:|:-:|:-:|
+|![logo-bsc] | ![logo-upc] | ![logo-gpi]  |
+|:-:|:-:|:-:|
 | [Barcelona Supercomputing Center][bsc-web] | [Universitat Politecnica de Catalunya (UPC)][upc-web]   | [UPC ETSETB TelecomBCN][etsetb-web]  | [UPC Image Processing Group][gpi-web] |
 
 [upc-web]: http://www.upc.edu/?set_language=en 

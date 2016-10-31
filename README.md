@@ -48,7 +48,7 @@ Experiments indicate better results for the overlapping candidate proposal strat
 
 ## Code Instructions
 
-This python code enables to both train and test each of the two models proposed in the paper. The image zooms model extracts features for each region visited, whereas the pool45 crops model extracts features just once and then ROI-pools features for each subregion. In this section we are going to describe how to use the cod.
+This python code enables to both train and test each of the two models proposed in the paper. The image zooms model extracts features for each region visited, whereas the pool45 crops model extracts features just once and then ROI-pools features for each subregion. In this section we are going to describe how to use the code.
 
 ### Setup
 
@@ -74,11 +74,12 @@ python image_zooms_training.py -n 0
 
 There are many options that can be changed to test different configurations:
 
-Number of steps
+Number of steps: For how many steps you want your agent to search for an object in an image.
 
-Drawing
+Subregion scale: The scale of the subregions in the hierarchy, compared to its ancestor. Default value is 3/4, that denoted good results in our experiments, but it can easily be set. Take into consideration that the subregion scale and the number of steps is very correlated, if the subregion scale is high, then you will probably require more steps to find objects.
 
-Subregion scale
+Drawing: 
+
 
 ##### Testing
 

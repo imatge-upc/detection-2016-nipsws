@@ -55,6 +55,8 @@ if __name__ == "__main__":
     bool_draw = 0
     # How many steps can run the agent until finding one object
     number_of_steps = 10
+    # Boolean to indicate if you want to use the two databases, or just one
+    two_databases = 0
     epochs = 50
     gamma = 0.99
     epsilon = 1
@@ -86,43 +88,49 @@ if __name__ == "__main__":
 
     ######## LOAD IMAGE NAMES ########
 
-    image_names = np.array([load_images_names_in_data_set('aeroplane_trainval', path_voc)])
-    # We check in the annottations which of the images actually contain the class category that we want
-    # notice that as we want to train it for planes (class category 1) we input this subset of the database
-    labels = load_images_labels_in_data_set('aeroplane_trainval', path_voc)
-    image_names_2 = []
-    for i in range(0, np.size(labels)):
-        if labels[i] == "1":
-            image_names_2.append(image_names[0][i])
-    image_names = image_names_2
-    ####  Uncomment if you want to use more than one database ####
-    # image_names_1 = np.array([load_images_names_in_data_set('aeroplane_trainval', path_voc)])
-    # labels = load_images_labels_in_data_set('aeroplane_trainval', path_voc)
-    # image_names_1_2 = []
-    # for i in range(0, np.size(labels)):
-    #     if labels[i] == "1":
-    #         image_names_1_2.append(image_names_1[0][i])
-    # image_names_2 = np.array([load_images_names_in_data_set('aeroplane_trainval', path_voc2)])
-    # labels = load_images_labels_in_data_set('aeroplane_trainval', path_voc2)
-    # image_names_2_2 = []
-    # for i in range(0, np.size(labels)):
-    #     if labels[i] == "1":
-    #         image_names_2_2.append(image_names_2[0][i])
-    # image_names = np.concatenate([image_names_1_2, image_names_2_2], axis=1)
+    if two_databases == 1:
+        image_names_1 = np.array([load_images_names_in_data_set('aeroplane_trainval', path_voc)])
+        labels = load_images_labels_in_data_set('aeroplane_trainval', path_voc)
+        image_names_1_2 = []
+        for i in range(0, np.size(labels)):
+            if labels[i] == "1":
+                image_names_1_2.append(image_names_1[0][i])
+        image_names_2 = np.array([load_images_names_in_data_set('aeroplane_trainval', path_voc2)])
+        labels = load_images_labels_in_data_set('aeroplane_trainval', path_voc2)
+        image_names_2_2 = []
+        for i in range(0, np.size(labels)):
+            if labels[i] == "1":
+                image_names_2_2.append(image_names_2[0][i])
+        image_names = np.concatenate([image_names_1_2, image_names_2_2], axis=1)
+    else:
+        image_names = np.array([load_images_names_in_data_set('aeroplane_trainval', path_voc)])
+        # We check in the annotations which of the images actually contain the class category that we want
+        # notice that as we want to train it for planes (class category 1) we input this subset of the database
+        labels = load_images_labels_in_data_set('aeroplane_trainval', path_voc)
+        image_names_2 = []
+        for i in range(0, np.size(labels)):
+            if labels[i] == "1":
+                image_names_2.append(image_names[0][i])
+        image_names = image_names_2
 
-    images = get_all_images_pool(image_names, path_voc)
-    ####  Uncomment if you want to use more than one database ####
-    # images1 = get_all_images_pool(image_names_1_2, path_voc)
-    # images2 = get_all_images_pool(image_names_2_2, path_voc2)
-    # images = images1 + images2
+    ######## LOAD IMAGES ########
+
+    if two_databases == 1:
+        images1 = get_all_images_pool(image_names_1_2, path_voc)
+        images2 = get_all_images_pool(image_names_2_2, path_voc2)
+        images = images1 + images2
+    else:
+        images = get_all_images_pool(image_names, path_voc)
+
 
     ######## PRECOMPUTE ALL INITIAL FEATURE MAPS ########
 
-    initial_feature_maps = calculate_all_initial_feature_maps(images, model_vgg, image_names)
-    ####  Uncomment if you want to use more than one database ####
-    # initial_feature_maps1 = calculate_all_initial_feature_maps(images1, model_vgg, image_names_1_2)
-    # initial_feature_maps2 = calculate_all_initial_feature_maps(images2, model_vgg, image_names_2_2)
-    # initial_feature_maps = initial_feature_maps1 + initial_feature_maps2
+    if two_databases == 1:
+        initial_feature_maps1 = calculate_all_initial_feature_maps(images1, model_vgg, image_names_1_2)
+        initial_feature_maps2 = calculate_all_initial_feature_maps(images2, model_vgg, image_names_2_2)
+        initial_feature_maps = initial_feature_maps1 + initial_feature_maps2
+    else:
+        initial_feature_maps = calculate_all_initial_feature_maps(images, model_vgg, image_names)
 
     for i in range(epochs_id, epochs_id+epochs_batch):
         for j in range(np.size(image_names)):
@@ -132,11 +140,11 @@ if __name__ == "__main__":
             image_name = image_names[j]
             feature_maps = initial_feature_maps[j]
             annotation = get_bb_of_gt_from_pascal_xml_annotation(image_name, path_voc)
-            # Uncomment for working with two databases
-            # if i < np.size(image_names1_2):
-            #     annotation = get_bb_of_gt_from_pascal_xml_annotation(image_name, path_voc)
-            # else:
-            #     annotation = get_bb_of_gt_from_pascal_xml_annotation(image_name, path_voc2)
+            if two_databases == 1:
+                if j < np.size(image_names1_2):
+                    annotation = get_bb_of_gt_from_pascal_xml_annotation(image_name, path_voc)
+                else:
+                    annotation = get_bb_of_gt_from_pascal_xml_annotation(image_name, path_voc2)
             gt_masks = generate_bounding_box_from_annotation(annotation, image.shape)
             array_classes_gt_objects = get_ids_objects_from_annotation(annotation)
             region_mask = np.ones([image.shape[0], image.shape[1]])
@@ -223,7 +231,6 @@ if __name__ == "__main__":
                             step += 1
                         # movement action, we perform the crop of the corresponding subregion
                         else:
-                            initial1 = time.time()
                             region_mask = np.zeros(original_shape)
                             size_mask = (size_mask[0] * scale_reduction, size_mask[1] * scale_reduction)
                             if action == 1:

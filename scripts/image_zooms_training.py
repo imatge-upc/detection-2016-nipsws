@@ -36,7 +36,7 @@ if __name__ == "__main__":
     # path of PASCAL VOC 2012 or other database to use for training
     path_voc = "/gpfs/projects/bsc31/bsc31429/VOC2012_train/"
     # path of other PASCAL VOC dataset, if you want to train with 2007 and 2012 train datasets
-    # path_voc2 = "/gpfs/projects/bsc31/bsc31429/VOC2007_train/"
+    path_voc2 = "/gpfs/projects/bsc31/bsc31429/VOC2007_train/"
     # path of where to store the models
     path_model = "/home/bsc31/bsc31429/detection-2016-nipsws/models_image_zooms_size34_epsilon"
     # path of where to store visualizations of search sequences
@@ -54,6 +54,8 @@ if __name__ == "__main__":
     bool_draw = 0
     # How many steps can run the agent until finding one object
     number_of_steps = 10
+    # Boolean to indicate if you want to use the two databases, or just one
+    two_databases = 0
     epochs = 50
     gamma = 0.99
     epsilon = 1
@@ -82,21 +84,21 @@ if __name__ == "__main__":
 
     ######## LOAD IMAGE NAMES ########
 
-    image_names = np.array([load_images_names_in_data_set('trainval', path_voc)])
-
-    #### Uncomment if you want to use more than one database ####
-    # image_names1=np.array([load_images_names_in_data_set('trainval', path_voc)])
-    # image_names2 = np.array([load_images_names_in_data_set('trainval', path_voc2)])
-    # image_names=np.concatenate([image_names1,image_names2])
+    if two_databases == 1:
+        image_names1 = np.array([load_images_names_in_data_set('trainval', path_voc)])
+        image_names2 = np.array([load_images_names_in_data_set('trainval', path_voc2)])
+        image_names = np.concatenate([image_names1, image_names2])
+    else:
+        image_names = np.array([load_images_names_in_data_set('trainval', path_voc)])
 
     ######## LOAD IMAGES ########
 
-    images = get_all_images(image_names, path_voc)
-
-    #### Uncomment if you want to use more than one database ####
-    # images1 = get_all_images(image_names1, path_voc)
-    # images2 = get_all_images(image_names2, path_voc2)
-    # images = np.concatenate([images1, images2])
+    if two_databases == 1:
+        images1 = get_all_images(image_names1, path_voc)
+        images2 = get_all_images(image_names2, path_voc2)
+        images = np.concatenate([images1, images2])
+    else:
+        images = get_all_images(image_names, path_voc)
 
     for i in range(epochs_id, epochs_id + epochs):
         for j in range(np.size(image_names)):
@@ -105,11 +107,11 @@ if __name__ == "__main__":
             image = np.array(images[j])
             image_name = image_names[0][j]
             annotation = get_bb_of_gt_from_pascal_xml_annotation(image_name, path_voc)
-            # Uncomment for working with two databases
-            # if i<np.size(image_names1):
-            #     annotation = get_bb_of_gt_from_pascal_xml_annotation(image_name, path_voc)
-            # else:
-            #     annotation = get_bb_of_gt_from_pascal_xml_annotation(image_name, path_voc2)
+            if two_databases == 1:
+                if j < np.size(image_names1):
+                    annotation = get_bb_of_gt_from_pascal_xml_annotation(image_name, path_voc)
+                else:
+                    annotation = get_bb_of_gt_from_pascal_xml_annotation(image_name, path_voc2)
             gt_masks = generate_bounding_box_from_annotation(annotation, image.shape)
             array_classes_gt_objects = get_ids_objects_from_annotation(annotation)
             region_mask = np.ones([image.shape[0], image.shape[1]])

@@ -15,26 +15,24 @@
 [torres-web]: http://www.jorditorres.org/
 [marques-web]:https://imatge.upc.edu/web/people/ferran-marques
 
-[bellver-photo]:  https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/authors/miriam.jpg "Míriam Bellver"
+[bellver-photo]:  https://github.com/imatge-upc/detection-2016-nipsws/blob/master/authors/miriam.jpg?raw=true "Míriam Bellver"
 [giro-photo]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/authors/giro.jpg?raw=true "Xavier Giro-i-Nieto"
-[marques-photo]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/authors/marques.jpg "Ferran Marques"
-[torres-photo]:  https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/img/master/JordiTorres.jpg  "Jordi Torres"
+[marques-photo]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/authors/marques.jpg?raw=true "Ferran Marques"
+[torres-photo]:  https://github.com/imatge-upc/detection-2016-nipsws/blob/master/authors/JordiTorres.jpg?raw=true  "Jordi Torres"
 
 A joint collaboration between:
 
-|<img src=https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/logos/bsc.jpg width="200"> | ![logo-upc] | ![logo-etsetb] | ![logo-gpi]  |
+|![logo-bsc] | ![logo-upc] | ![logo-etsetb] | ![logo-gpi]  |
 |:-:|:-:|:-:|:-:|
 | [Barcelona Supercomputing Center][bsc-web] | [Universitat Politecnica de Catalunya (UPC)][upc-web]   | [UPC ETSETB TelecomBCN][etsetb-web]  | [UPC Image Processing Group][gpi-web] |
 
 [upc-web]: http://www.upc.edu/?set_language=en 
-[etsetb-web]: https://www.etsetb.upc.edu/en/ 
 [gpi-web]: https://imatge.upc.edu/web/ 
 [bsc-web]: http://www.bsc.es 
 
-
-[logo-upc]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/logos/upc.jpg "Universitat Politecnica de Catalunya (UPC)"
-[logo-etsetb]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/logos/etsetb.png "ETSETB TelecomBCN"
-[logo-gpi]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/logos/gpi.png "UPC Image Processing Group"
+[logo-bsc]:https://github.com/imatge-upc/detection-2016-nipsws/blob/master/logos/bsc.jpg?raw=true "Barcelona Supercomputing Center"
+[logo-upc]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/logos/upc.jpg?raw=true "Universitat Politecnica de Catalunya (UPC)"
+[logo-gpi]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/logos/gpi.png?raw=true "UPC Image Processing Group"
 
 ## Publication
 ### Abstract

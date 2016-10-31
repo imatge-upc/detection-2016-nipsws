@@ -16,7 +16,7 @@
 [marques-web]:https://imatge.upc.edu/web/people/ferran-marques
 
 [bellver-photo]:  https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/authors/miriam.jpg "Míriam Bellver"
-[giro-photo]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/authors/giro.jpg "Xavier Giro-i-Nieto"
+[giro-photo]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/authors/giro.jpg?raw=true "Xavier Giro-i-Nieto"
 [marques-photo]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/master/authors/marques.jpg "Ferran Marques"
 [torres-photo]:  https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/img/master/JordiTorres.jpg  "Jordi Torres"
 

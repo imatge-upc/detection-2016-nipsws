@@ -52,7 +52,7 @@ This python code enables to both train and test each of the two models proposed 
 
 ### Setup
 
-First of all the weights of VGG-16 should be downloaded from the following link [VGG-16 weights]. If you want to use some pre-trained models for the Deep Q-network, they can be downloaded in the following links [Image Zooms model] and [Pool45 Crops model].You should put them inside the corresponding folders, the Image Zooms model in the models_image_zooms, and the Pool45 Crops model in the models_pool45_crops folder. 
+First of all the weights of VGG-16 should be downloaded from the following link [VGG-16 weights]. If you want to use some pre-trained models for the Deep Q-network, they can be downloaded in the following links [Image Zooms model] and [Pool45 Crops model].You should also create two folders in the root of the project, called models_image_zooms and models_pool45_crops, and store inside them the corresponding weights. 
 
 
 [VGG-16 weights]: https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view?usp=sharing
@@ -61,5 +61,31 @@ First of all the weights of VGG-16 should be downloaded from the following link 
 
 
 ### Usage
+
+##### Training
+
+We will follow as example how to train the Image Zooms model, that is the one that achieves better results. The instructions are equal for training the Pool45 Crops model. The script is image_zooms_training.py, and first the path to the database should be configured:
+
+PATHS
+
+The enables checkpointing, so you should indicate which epoch you are going to train. If you are training it from scratch, then the training command should be:
+
+python image_zooms_training.py -n 0
+
+There are many options that can be changed to test different configurations:
+
+Number of steps
+
+Drawing
+
+Subregion scale
+
+##### Testing
+
+In this case, you should use the script image_zooms_testing.py. You should also configure the paths to indicate which weights you want to use. In this case, you should only run the command python image_zooms_testing.py. It is recommended that for testing you put bool_draw = 1, so you can observe the visualizations of the object search sequences. 
+
+
+
+
 
 

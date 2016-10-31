@@ -15,10 +15,10 @@
 [torres-web]: http://www.jorditorres.org/
 [marques-web]:https://imatge.upc.edu/web/people/ferran-marques
 
-[bellver-photo]:  "Míriam Bellver"
-[giro-photo]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/authors/giro.jpg "Xavier Giro-i-Nieto"
-[marques-photo]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/authors/marques.jpg "Ferran Marques"
-[satoh-photo]:  "Jordi Torres"
+[bellver-photo]:  https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/img/miriam.jpg "Míriam Bellver"
+[giro-photo]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/img/giro.jpg "Xavier Giro-i-Nieto"
+[marques-photo]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/img/marques.jpg "Ferran Marques"
+[satoh-photo]: https://raw.githubusercontent.com/imatge-upc/detection-2016-nipsws/img/JordiTorres.jpg "Jordi Torres"
 
 A joint collaboration between:
 

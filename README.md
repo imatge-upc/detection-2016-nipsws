@@ -1,6 +1,6 @@
 # Hierarchical Object Detection with Deep Reinforcement Learning
 
-|  ![NIPS 2016 logo][logo-cvpr] | Paper accepted at [Deep Reinforcement Learning Workshop, NIPS 2016](https://sites.google.com/site/deeprlnips2016/)   |
+|  ![NIPS 2016 logo][logo-nips] | Paper accepted at [Deep Reinforcement Learning Workshop, NIPS 2016](https://sites.google.com/site/deeprlnips2016/)   |
 |:-:|---|
 
 [logo-nips]: http://hci-kdd.org/wordpress/wp-content/uploads/2014/11/Neural-Information-Processing-2016.jpg "NIPS 2016 logo"

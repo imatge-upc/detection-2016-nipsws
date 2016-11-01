@@ -84,27 +84,40 @@ First of all the weights of VGG-16 should be downloaded from the following link 
 
 ##### Training
 
-We will follow as example how to train the Image Zooms model, that is the one that achieves better results. The instructions are equal for training the Pool45 Crops model. The script is image_zooms_training.py, and first the path to the database should be configured:
+We will follow as example how to train the Image Zooms model, that is the one that achieves better results. The instructions are equal for training the Pool45 Crops model. The script is image_zooms_training.py, and first the path to the database should be configured. The default paths are the following:
 
-PATHS
+    # path of PASCAL VOC 2012 or other database to use for training
+    path_voc = "./VOC2012/"
+    # path of other PASCAL VOC dataset, if you want to train with 2007 and 2012 train datasets
+    path_voc2 = "./VOC2007/"
+    # path of where to store the models
+    path_model = "./models_image_zooms"
+    # path of where to store visualizations of search sequences
+    path_testing_folder = './testing_visualizations'
+    # path of VGG16 weights
+    path_vgg = "./vgg16_weights.h5"
 
-The enables checkpointing, so you should indicate which epoch you are going to train. If you are training it from scratch, then the training command should be:
+But you can change them to point to your own locations. 
+
+The training of the models enables checkpointing, so you should indicate which epoch you are going to train when running the script. If you are training it from scratch, then the training command should be:
 
 python image_zooms_training.py -n 0
 
 There are many options that can be changed to test different configurations:
 
-Number of steps: For how many steps you want your agent to search for an object in an image.
+**class_object**: for which class you want to train the models. We have trained it for planes, and all the experiments of the paper are run on this class, but you can test other categories of pascal, also changing appropiately the training databases. 
 
-Subregion scale: The scale of the subregions in the hierarchy, compared to its ancestor. Default value is 3/4, that denoted good results in our experiments, but it can easily be set. Take into consideration that the subregion scale and the number of steps is very correlated, if the subregion scale is high, then you will probably require more steps to find objects.
+**number_of_steps**: For how many steps you want your agent to search for an object in an image.
 
-Drawing: 
+**scale_subregion**: The scale of the subregions in the hierarchy, compared to its ancestor. Default value is 3/4, that denoted good results in our experiments, but it can easily be set. Take into consideration that the subregion scale and the number of steps is very correlated, if the subregion scale is high, then you will probably require more steps to find objects.
 
+**bool_draw**: This is a boolean, that if it is set to 1, it stores visualizations of the sequences for image searches. 
+
+At each epoch the models will be saved in the models_image_zooms folder.
 
 ##### Testing
 
-In this case, you should use the script image_zooms_testing.py. You should also configure the paths to indicate which weights you want to use. In this case, you should only run the command python image_zooms_testing.py. It is recommended that for testing you put bool_draw = 1, so you can observe the visualizations of the object search sequences. 
-
+To test the models, you should use the script image_zooms_testing.py. You should also configure the paths to indicate which weights you want to use, in the same manner as in the training stage. In this case, you should only run the command python image_zooms_testing.py. It is recommended that for testing you put bool_draw = 1, so you can observe the visualizations of the object search sequences. 
 
 
 ## Acknowledgements

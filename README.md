@@ -68,7 +68,10 @@ You may also want to refer to our publication with the more human-friendly Chica
 
 ## Code Instructions
 
-This python code enables to both train and test each of the two models proposed in the paper. The image zooms model extracts features for each region visited, whereas the pool45 crops model extracts features just once and then ROI-pools features for each subregion. In this section we are going to describe how to use the code.
+This python code enables to both train and test each of the two models proposed in the paper. The image zooms model extracts features for each region visited, whereas the pool45 crops model extracts features just once and then ROI-pools features for each subregion. In this section we are going to describe how to use the code. The code uses Keras framework library.
+
+
+First it is important to notice that this code is already an extension of the code used for the paper. During the training stage, we are not only considering one object per image, we are also training for other objects by covering the already found objects with the mean of VGG-16, inspired by what Caceido et al. did on Active Object Localization with Deep Reinforcement Learning. 
 
 ### Setup
 
@@ -76,8 +79,8 @@ First of all the weights of VGG-16 should be downloaded from the following link 
 
 
 [VGG-16 weights]: https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view?usp=sharing
-[Image Zooms model]: 
-[Pool45 Crops model]:
+[Image Zooms model]: https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view?usp=sharing
+[Pool45 Crops model]: https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view?usp=sharing
 
 
 ### Usage

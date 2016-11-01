@@ -35,15 +35,15 @@ if __name__ == "__main__":
     ######## PATHS definition ########
 
     # path of PASCAL VOC 2012 or other database to use for training
-    path_voc = "/gpfs/projects/bsc31/bsc31429/VOC2012_train/"
+    path_voc = "./VOC2012_train/"
     # path of other PASCAL VOC dataset, if you want to train with 2007 and 2012 train datasets
     # path_voc2 = "/gpfs/projects/bsc31/bsc31429/VOC2007_train/"
     # path of where to store the models
-    path_model = "/home/bsc31/bsc31429/detection-2016-nipsws/models_pool45_crops_size34_epsilon"
+    path_model = "./models_pool45_crops"
     # path of where to store visualizations of search sequences
-    path_testing_folder = '/home/bsc31/bsc31429/detection-2016-nipsws/fast_testing'
+    path_testing_folder = './fast_testing'
     # path of VGG16 weights
-    path_vgg = "/home/bsc31/bsc31429/detection-2016-nipsws/vgg16_weights.h5"
+    path_vgg = "vgg16_weights.h5"
 
     ######## PARAMETERS ########
 

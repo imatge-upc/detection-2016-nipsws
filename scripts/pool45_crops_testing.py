@@ -26,15 +26,15 @@ if __name__ == "__main__":
     ######## PATHS definition ########
 
     # path of pascal voc test
-    path_voc_test = "/gpfs/projects/bsc31/bsc31429/VOC2007_test/"
+    path_voc_test = "./VOC2007_test/"
     # model name of the weights
-    model_name = "model0_epoch_60h5"
+    model_name = "model_pool45_crops"
     # path of folder where the weights are
-    weights_path = "/home/bsc31/bsc31429/detection-2016-nipsws/models_pool45_crops_size34_epsilon/"
+    weights_path = "./models_pool45_crops/"
     # path of where to store visualizations of search sequences
-    path_testing_folder = '/home/bsc31/bsc31429/detection-2016-nipsws/fast_testing/epoch35_'
+    path_testing_folder = './testing/'
     # path of VGG16 weights
-    path_vgg = "/home/bsc31/bsc31429/detection-2016-nipsws/vgg16_weights.h5"
+    path_vgg = "vgg16_weights.h5"
 
     ######## MODELS ########
 

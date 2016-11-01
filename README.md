@@ -117,7 +117,7 @@ At each epoch the models will be saved in the models_image_zooms folder.
 
 ##### Testing
 
-To test the models, you should use the script image_zooms_testing.py. You should also configure the paths to indicate which weights you want to use, in the same manner as in the training stage. In this case, you should only run the command python image_zooms_testing.py. It is recommended that for testing you put bool_draw = 1, so you can observe the visualizations of the object search sequences. 
+To test the models, you should use the script image_zooms_testing.py. You should also configure the paths to indicate which weights you want to use, in the same manner as in the training stage. In this case, you should only run the command python image_zooms_testing.py. It is recommended that for testing you put bool_draw = 1, so you can observe the visualizations of the object search sequences. There is the option to just search for a single object in each image, to reproduce the same results of our paper, by just setting the boolean only_first_object to 1.
 
 
 ## Acknowledgements

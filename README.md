@@ -94,11 +94,11 @@ We will follow as example how to train the Image Zooms model, that is the one th
     # path of other PASCAL VOC dataset, if you want to train with 2007 and 2012 train datasets
     path_voc2 = "./VOC2007/"
     # path of where to store the models
-    path_model = "./models_image_zooms"
+    path_model = "../models_image_zooms"
     # path of where to store visualizations of search sequences
-    path_testing_folder = './testing_visualizations'
+    path_testing_folder = '../testing_visualizations'
     # path of VGG16 weights
-    path_vgg = "./vgg16_weights.h5"
+    path_vgg = "../vgg16_weights.h5"
 
 But you can change them to point to your own locations. 
 

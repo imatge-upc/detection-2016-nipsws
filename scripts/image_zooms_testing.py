@@ -30,11 +30,11 @@ if __name__ == "__main__":
     # model name of the weights
     model_name = "model_image_zooms"
     # path of folder where the weights are
-    weights_path = "./models_image_zooms/"
+    weights_path = "../models_image_zooms/"
     # path of where to store visualizations of search sequences
-    path_testing_folder = './testing/'
+    path_testing_folder = '../testing/'
     # path of VGG16 weights
-    path_vgg = "vgg16_weights.h5"
+    path_vgg = "../vgg16_weights.h5"
 
      ######## MODELS ########
 

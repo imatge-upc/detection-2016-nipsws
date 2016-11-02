@@ -39,11 +39,11 @@ if __name__ == "__main__":
     # path of other PASCAL VOC dataset, if you want to train with 2007 and 2012 train datasets
     # path_voc2 = "/gpfs/projects/bsc31/bsc31429/VOC2007_train/"
     # path of where to store the models
-    path_model = "./models_pool45_crops"
+    path_model = "../models_pool45_crops"
     # path of where to store visualizations of search sequences
-    path_testing_folder = './fast_testing'
+    path_testing_folder = '../testing'
     # path of VGG16 weights
-    path_vgg = "vgg16_weights.h5"
+    path_vgg = "../vgg16_weights.h5"
 
     ######## PARAMETERS ########
 

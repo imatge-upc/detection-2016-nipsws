@@ -66,7 +66,7 @@ if __name__ == "__main__":
     # are trained at the same time
     h = np.zeros([20])
     # Each replay memory (one for each possible category) has a capacity of 100 experiences
-    buffer_experience_replay = 100
+    buffer_experience_replay = 1000
     # Init replay memories
     replay = [[] for i in range(20)]
     reward = 0

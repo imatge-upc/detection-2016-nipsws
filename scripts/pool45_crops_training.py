@@ -58,7 +58,7 @@ if __name__ == "__main__":
     # Boolean to indicate if you want to use the two databases, or just one
     two_databases = 0
     epochs = 50
-    gamma = 0.99
+    gamma = 0.90
     epsilon = 1
     batch_size = 100
     # Pointer to where to store the last experience in the experience replay buffer,

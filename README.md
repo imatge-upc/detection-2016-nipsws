@@ -16,8 +16,8 @@
 [marques-web]:https://imatge.upc.edu/web/people/ferran-marques
 
 [bellver-photo]:  https://github.com/imatge-upc/detection-2016-nipsws/blob/master/authors/MiriamBellver160x160.jpg?raw=true "Míriam Bellver"
-[giro-photo]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/authors/XavierGiro160x160.jpg?raw=true "Xavier Giro-i-Nieto"
-[marques-photo]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/authors/FerranMarques160x160.jpg?raw=true "Ferran Marques"
+[giro-photo]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/authors/XavierGiro160x160.jpg?raw=true "Xavier Giró-i-Nieto"
+[marques-photo]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/authors/FerranMarques160x160.jpg?raw=true "Ferran Marqués"
 [torres-photo]:  https://github.com/imatge-upc/detection-2016-nipsws/blob/master/authors/JordiTorres.jpg?raw=true  "Jordi Torres"
 
 A joint collaboration between:
@@ -130,7 +130,7 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 
 | ![AlbertGil-photo]  | ![JosepPujal-photo]  | ![CarlosTripiana-photo]  |
 |:-:|:-:|:-:|
-| [Albert Gil](AlbertGil-web)  |  [Josep Pujal](JosepPujal-web) | [Carlos Tripiana](CarlosTripiana-web) |
+| [Albert Gil](https://imatge.upc.edu/web/people/albert-gil-moreno)  |  [Josep Pujal](https://imatge.upc.edu/web/people/josep-pujal) | [Carlos Tripiana](https://www.bsc.es/tripiana-carlos/) |
 
 [AlbertGil-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/AlbertGil.jpg "Albert Gil"
 [JosepPujal-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/JosepPujal.jpg "Josep Pujal"

@@ -133,7 +133,7 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 
 [AlbertGil-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/AlbertGil.jpg "Albert Gil"
 [JosepPujal-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/JosepPujal.jpg "Josep Pujal"
-[CarlosTripiana-photo]: https://www.bsc.es/sites/default/files/public/personal_photo/ctripian.jpeg
+[CarlosTripiana-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/carlos160x160.jpeg "Carlos Tripiana"
 
 [AlbertGil-web]: https://imatge.upc.edu/web/people/albert-gil-moreno
 [JosepPujal-web]: https://imatge.upc.edu/web/people/josep-pujal

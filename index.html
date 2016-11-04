@@ -112,7 +112,7 @@ year = {2016}
 <h3>
 <a id="setup" class="anchor" href="#setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup</h3>
 
-<p>First of all the weights of VGG-16 should be downloaded from the following link <a href="https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view?usp=sharing">VGG-16 weights</a>. If you want to use some pre-trained models for the Deep Q-network, they can be downloaded in the following links <a href="https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view?usp=sharing">Image Zooms model</a> and <a href="https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view?usp=sharing">Pool45 Crops model</a>. You should also create two folders in the root of the project, called models_image_zooms and models_pool45_crops, and store inside them the corresponding weights. </p>
+<p>First of all the weights of VGG-16 should be downloaded from the following link <a href="http://imatge.upc.edu/web/sites/default/files/projects/deeplearning/public/detection-2016-nipsws/vgg16_weights.h5">VGG-16 weights</a>. If you want to use some pre-trained models for the Deep Q-network, they can be downloaded in the following links <a href="http://imatge.upc.edu/web/sites/default/files/projects/deeplearning/public/detection-2016-nipsws/model_image_zooms">Image Zooms model</a> and <a href="http://imatge.upc.edu/web/sites/default/files/projects/deeplearning/public/detection-2016-nipsws/model_pool45_crops">Pool45 Crops model</a>. You should also create two folders in the root of the project, called models_image_zooms and models_pool45_crops, and store inside them the corresponding weights. </p>
 
 <h3>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
@@ -160,19 +160,21 @@ path_vgg = "../vgg16_weights.h5"
 <h2>
 <a id="acknowledgements" class="anchor" href="#acknowledgements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Acknowledgements</h2>
 
-<p>We would like to especially thank Albert Gil Moreno and Josep Pujal from our technical support team at the Image Processing Group at the UPC.</p>
+<p>We would like to especially thank Albert Gil Moreno and Josep Pujal from our technical support team at the Image Processing Group at the UPC. We also would like to thank Carlos Tripiana from the technical support team at the Barcelona Supercomputing center (BSC). </p>
 
 <table>
 <thead>
 <tr>
 <th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/AlbertGil.jpg" alt="AlbertGil-photo" title="Albert Gil"></th>
 <th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/JosepPujal.jpg" alt="JosepPujal-photo" title="Josep Pujal"></th>
+<th align="center"><img src="https://github.com/imatge-upc/detection-2016-nipsws/blob/master/authors/carlos160x160.jpeg?raw=true" alt="CarlosTripiana-photo" title="Carlos Tripiana"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td align="center"><a href="AlbertGil-web">Albert Gil</a></td>
 <td align="center"><a href="JosepPujal-web">Josep Pujal</a></td>
+<td align="center"><a href="CarlosTripiana-web">Carlos Tripiana</a></td>
 </tr>
 </tbody>
 </table>
@@ -186,7 +188,11 @@ path_vgg = "../vgg16_weights.h5"
 </thead>
 <tbody>
 <tr>
-<td align="left">We gratefully acknowledge the support of <a href="http://www.nvidia.com/content/global/global.php">NVIDIA Corporation</a> with the donation of the GeoForce GTX <a href="http://www.nvidia.com/gtx-700-graphics-cards/gtx-titan-z/">Titan Z</a> and <a href="http://www.geforce.com/hardware/desktop-gpus/geforce-gtx-titan-x">Titan X</a> used in this work.</td>
+<td align="left">This work has been supported by the <a href="https://www.bsc.es/es/severo-ochoa/presentaci%C3%B3n">grant SEV2015-0493 of the Severo Ochoa Program</a> awarded by Spanish Government, project TIN2015-65316 by the Spanish Ministry of Science and Innovation contracts 2014-SGR-1051 by Generalitat de Catalunya</td>
+<td align="center"><img src="https://github.com/imatge-upc/detection-2016-nipsws/blob/master/logos/severo_ochoa.png?raw=true" alt="logo-severo" title="Severo Ochoa"></td>
+</tr>
+<tr>
+<td align="left">We gratefully acknowledge the support of <a href="http://www.nvidia.com/content/global/global.php">NVIDIA Corporation</a> with the donation of the GeoForce GTX <a href="http://www.nvidia.com/gtx-700-graphics-cards/gtx-titan-z/">Titan Z</a> and <a href="http://www.geforce.com/hardware/desktop-gpus/geforce-gtx-titan-x">Titan X</a> used in this work at the UPC, and the BSC/UPC NVIDIA GPU Center of Excellence.</td>
 <td align="center"><img src="https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/nvidia.jpg" alt="logo-nvidia" title="Logo of NVidia"></td>
 </tr>
 <tr>

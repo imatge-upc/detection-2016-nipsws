@@ -148,7 +148,7 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 |  This work has been developed in the framework of the project [BigGraph TEC2013-43935-R](https://imatge.upc.edu/web/projects/biggraph-heterogeneous-information-and-graph-signal-processing-big-data-era-application), funded by the Spanish Ministerio de Economía y Competitividad and the European Regional Development Fund (ERDF).  | ![logo-spain] | 
 
 
-[logo-nvidia]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/excellence_center.jpg "Logo of NVidia"
+[logo-nvidia]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/logos/excellence_center.jpg?raw=true  "Logo of NVidia"
 [logo-catalonia]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/generalitat.jpg "Logo of Catalan government"
 [logo-spain]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/logos/MEyC.png "Logo of Spanish government"
 

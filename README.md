@@ -128,7 +128,7 @@ To test the models, you should use the script image_zooms_testing.py. You should
 We would like to especially thank Albert Gil Moreno and Josep Pujal from our technical support team at the Image Processing Group at the UPC. We also would like to thank Carlos Tripiana from the technical support team at the Barcelona Supercomputing center (BSC). 
 
 | ![AlbertGil-photo]  | ![JosepPujal-photo]  | ![CarlosTripiana-photo]  |
-|:-:|:-:|
+|:-:|:-:|:-:|
 | [Albert Gil](AlbertGil-web)  |  [Josep Pujal](JosepPujal-web) | [Carlos Tripiana](CarlosTripiana-web) |
 
 [AlbertGil-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/AlbertGil.jpg "Albert Gil"

@@ -131,9 +131,9 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 |:-:|:-:|:-:|
 | [Albert Gil](AlbertGil-web)  |  [Josep Pujal](JosepPujal-web) | [Carlos Tripiana](CarlosTripiana-web) |
 
-[AlbertGil-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/AlbertGil.jpg "Albert Gil"
-[JosepPujal-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/JosepPujal.jpg "Josep Pujal"
-[CarlosTripiana-photo]: https://raw.githubusercontent.com/imatge-upc/saliency-2016-cvpr/master/authors/carlos160x160.jpeg "Carlos Tripiana"
+[AlbertGil-photo]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/authors//AlbertGil.jpg "Albert Gil"
+[JosepPujal-photo]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/authors/JosepPujal.jpg "Josep Pujal"
+[CarlosTripiana-photo]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/authors/carlos160x160.jpg?raw=true "Carlos Tripiana"
 
 [AlbertGil-web]: https://imatge.upc.edu/web/people/albert-gil-moreno
 [JosepPujal-web]: https://imatge.upc.edu/web/people/josep-pujal

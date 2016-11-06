@@ -56,7 +56,7 @@ if __name__ == "__main__":
     class_object = 1
     # 1 if you want to obtain visualizations of the search for objects
     bool_draw = 1
-    # Scale of subregion for the hierarchical regions (in quarters, to deal with 1/4, 2/4, 3/4)
+    # Scale of subregion for the hierarchical regions (to deal with 2/4, 3/4)
     scale_subregion = float(3)/4
     scale_mask = float(1)/(scale_subregion*4)
     # Number of steps that the agent does at each image

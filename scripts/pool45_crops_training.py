@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     # Class category of PASCAL that the RL agent will be searching
     class_object = 1
-    # Scale of subregion for the hierarchical regions (in quarters, to deal with 1/4, 2/4, 3/4)
+    # Scale of subregion for the hierarchical regions (to deal with 2/4, 3/4)
     scale_subregion = float(3)/4
     scale_mask = float(1)/(scale_subregion*4)
     # 1 if you want to obtain visualizations of the search for objects

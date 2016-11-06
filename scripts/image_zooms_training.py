@@ -48,8 +48,9 @@ if __name__ == "__main__":
 
     # Class category of PASCAL that the RL agent will be searching
     class_object = 1
-    # Scale of subregion for the hierarchical regions.
+    # Scale of subregion for the hierarchical regions (in quarters, to deal with 1/4, 2/4, 3/4)
     scale_subregion = float(3)/4
+    scale_mask = float(1)/(scale_subregion*4)
     # 1 if you want to obtain visualizations of the search for objects
     bool_draw = 0
     # How many steps can run the agent until finding one object
@@ -195,25 +196,25 @@ if __name__ == "__main__":
                         # movement action, we perform the crop of the corresponding subregion
                         else:
                             region_mask = np.zeros(original_shape)
-                            size_mask = (size_mask[0] * scale_subregion, size_mask[1] * scale_subregion)
+                            size_mask = (size_mask[0] * scale_reduction, size_mask[1] * scale_reduction)
                             if action == 1:
                                 offset_aux = (0, 0)
                             elif action == 2:
-                                offset_aux = (0, size_mask[1] * (1 - scale_subregion))
-                                offset = (offset[0], offset[1] + size_mask[1] * (1 - scale_subregion))
+                                offset_aux = (0, size_mask[1] * scale_mask)
+                                offset = (offset[0], offset[1] + size_mask[1] * scale_mask)
                             elif action == 3:
-                                offset_aux = (size_mask[0] * (1 - scale_subregion), 0)
-                                offset = (offset[0] + size_mask[0] * (1 - scale_subregion), offset[1])
+                                offset_aux = (size_mask[0] * scale_mask, 0)
+                                offset = (offset[0] + size_mask[0] * scale_mask, offset[1])
                             elif action == 4:
-                                offset_aux = (size_mask[0] * (1 - scale_subregion),
-                                              size_mask[1] * (1 - scale_subregion))
-                                offset = (offset[0] + size_mask[0] * (1 - scale_subregion),
-                                          offset[1] + size_mask[1] * (1 - scale_subregion))
+                                offset_aux = (size_mask[0] * scale_mask, 
+                                              size_mask[1] * scale_mask)
+                                offset = (offset[0] + size_mask[0] * scale_mask,
+                                          offset[1] + size_mask[1] * scale_mask)
                             elif action == 5:
-                                offset_aux = (size_mask[0] * (1 - scale_subregion) / 2,
-                                              size_mask[0] * (1 - scale_subregion) / 2)
-                                offset = (offset[0] + size_mask[0] * (1 - scale_subregion) / 2,
-                                          offset[1] + size_mask[0] * (1 - scale_subregion) / 2)
+                                offset_aux = (size_mask[0] * scale_mask / 2,
+                                              size_mask[0] * scale_mask / 2)
+                                offset = (offset[0] + size_mask[0] * scale_mask / 2,
+                                          offset[1] + size_mask[0] * scale_mask / 2)
                             region_image = region_image[offset_aux[0]:offset_aux[0] + size_mask[0],
                                            offset_aux[1]:offset_aux[1] + size_mask[1]]
                             region_mask[offset[0]:offset[0] + size_mask[0], offset[1]:offset[1] + size_mask[1]] = 1

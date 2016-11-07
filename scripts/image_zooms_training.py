@@ -196,7 +196,7 @@ if __name__ == "__main__":
                         # movement action, we perform the crop of the corresponding subregion
                         else:
                             region_mask = np.zeros(original_shape)
-                            size_mask = (size_mask[0] * scale_reduction, size_mask[1] * scale_reduction)
+                            size_mask = (size_mask[0] * scale_subregion, size_mask[1] * scale_subregion)
                             if action == 1:
                                 offset_aux = (0, 0)
                             elif action == 2:

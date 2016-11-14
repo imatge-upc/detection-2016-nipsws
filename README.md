@@ -49,7 +49,7 @@ Experiments indicate better results for the overlapping candidate proposal strat
 
 ## Publication
 
-Our workshop paper will soon be available on arXiv (early November 2016).
+Our workshop paper is available on [arXiv](https://arxiv.org/abs/1611.03718).
 
 Please cite with the following Bibtex code:
 

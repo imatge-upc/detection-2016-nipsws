@@ -85,7 +85,7 @@
 <h2>
 <a id="publication" class="anchor" href="#publication" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Publication</h2>
 
-      <p>Our workshop preprint is available on <a href="https://arxiv.org/abs/1611.03718">arXiv</a> (14 November 2016).</p>
+<p>Our workshop paper is available on <a href="https://arxiv.org/abs/1611.03718">arXiv</a>.</p>
 
 <p>Please cite with the following Bibtex code:</p>
 
@@ -105,14 +105,14 @@ year = {2016}
 <h2>
 <a id="code-instructions" class="anchor" href="#code-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Code Instructions</h2>
 
-<p>This python code enables to both train and test each of the two models proposed in the paper. The image zooms model extracts features for each region visited, whereas the pool45 crops model extracts features just once and then ROI-pools features for each subregion. In this section we are going to describe how to use the code. The code uses Keras framework library.</p>
+<p>This python code enables to both train and test each of the two models proposed in the paper. The image zooms model extracts features for each region visited, whereas the pool45 crops model extracts features just once and then ROI-pools features for each subregion. In this section we are going to describe how to use the code. The code uses Keras framework library. If you are using a virtual environment, you can use the requirements.txt provided.</p>
 
 <p>First it is important to notice that this code is already an extension of the code used for the paper. During the training stage, we are not only considering one object per image, we are also training for other objects by covering the already found objects with the mean of VGG-16, inspired by what Caceido et al. did on Active Object Localization with Deep Reinforcement Learning. </p>
 
 <h3>
 <a id="setup" class="anchor" href="#setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup</h3>
 
-<p>First of all the weights of VGG-16 should be downloaded from the following link <a href="http://imatge.upc.edu/web/sites/default/files/projects/deeplearning/public/detection-2016-nipsws/vgg16_weights.h5">VGG-16 weights</a>. If you want to use some pre-trained models for the Deep Q-network, they can be downloaded in the following links <a href="http://imatge.upc.edu/web/sites/default/files/projects/deeplearning/public/detection-2016-nipsws/model_image_zooms">Image Zooms model</a> and <a href="http://imatge.upc.edu/web/sites/default/files/projects/deeplearning/public/detection-2016-nipsws/model_pool45_crops">Pool45 Crops model</a>. You should also create two folders in the root of the project, called models_image_zooms and models_pool45_crops, and store inside them the corresponding weights. </p>
+<p>First of all the weights of VGG-16 should be downloaded from the following link <a href="http://imatge.upc.edu/web/sites/default/files/projects/deeplearning/public/detection-2016-nipsws/vgg16_weights.h5">VGG-16 weights</a>. If you want to use some pre-trained models for the Deep Q-network, they can be downloaded in the following links <a href="http://imatge.upc.edu/web/sites/default/files/projects/deeplearning/public/detection-2016-nipsws/model_image_zooms">Image Zooms model</a> and <a href="http://imatge.upc.edu/web/sites/default/files/projects/deeplearning/public/detection-2016-nipsws/model_pool45_crops">Pool45 Crops model</a>. Notice that these models could lead to different results compared to the ones provided in the paper, due that these models are already trained to find more than one instance of planes in the image. You should also create two folders in the root of the project, called models_image_zooms and models_pool45_crops, and store inside them the corresponding weights. </p>
 
 <h3>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>

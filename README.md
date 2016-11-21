@@ -49,7 +49,7 @@ Experiments indicate better results for the overlapping candidate proposal strat
 
 ## Publication
 
-Our workshop paper is available on [arXiv](https://arxiv.org/abs/1611.03718).
+Our workshop paper is available on [arXiv](https://arxiv.org/abs/1611.03718), and related slides [here](http://www.slideshare.net/xavigiro/hierarchical-object-detection-with-deep-reinforcement-learning).
 
 Please cite with the following Bibtex code:
 

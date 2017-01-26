@@ -71,9 +71,21 @@ def get_feature_maps(model, img):
 # get deeper feature map
 def get_feature_map_8(model, im):
     im = im.astype(np.float32)
-    im[:, :, 0] -= 103.939
-    im[:, :, 1] -= 116.779
-    im[:, :, 2] -= 123.68
+    dim_ordering = K.image_dim_ordering()
+    if dim_ordering == 'th':
+        # 'RGB'->'BGR'
+        im = im[::-1, :, :]
+        # Zero-center by mean pixel
+        im[0, :, :] -= 103.939
+        im[1, :, :] -= 116.779
+        im[2, :, :] -= 123.68
+    else:
+        # 'RGB'->'BGR'
+        im = im[:, :, ::-1]
+        # Zero-center by mean pixel
+        im[:, :, 0] -= 103.939
+        im[:, :, 1] -= 116.779
+        im[:, :, 2] -= 123.68
     im = im.transpose((2, 0, 1))
     im = np.expand_dims(im, axis=0)
     inputs = [K.learning_phase()] + model.inputs
@@ -87,9 +99,21 @@ def get_feature_map_8(model, im):
 # get shallower feature map
 def get_feature_map_4(model, im):
     im = im.astype(np.float32)
-    im[:, :, 0] -= 103.939
-    im[:, :, 1] -= 116.779
-    im[:, :, 2] -= 123.68
+    dim_ordering = K.image_dim_ordering()
+    if dim_ordering == 'th':
+        # 'RGB'->'BGR'
+        im = im[::-1, :, :]
+        # Zero-center by mean pixel
+        im[0, :, :] -= 103.939
+        im[1, :, :] -= 116.779
+        im[2, :, :] -= 123.68
+    else:
+        # 'RGB'->'BGR'
+        im = im[:, :, ::-1]
+        # Zero-center by mean pixel
+        im[:, :, 0] -= 103.939
+        im[:, :, 1] -= 116.779
+        im[:, :, 2] -= 123.68
     im = im.transpose((2, 0, 1))
     im = np.expand_dims(im, axis=0)
     inputs = [K.learning_phase()] + model.inputs
@@ -177,9 +201,21 @@ def calculate_all_initial_feature_maps(images, model, image_names):
 
 def get_image_descriptor_for_image(image, model):
     im = cv2.resize(image, (224, 224)).astype(np.float32)
-    im[:, :, 0] -= 103.939
-    im[:, :, 1] -= 116.779
-    im[:, :, 2] -= 123.68
+    dim_ordering = K.image_dim_ordering()
+    if dim_ordering == 'th':
+        # 'RGB'->'BGR'
+        im = im[::-1, :, :]
+        # Zero-center by mean pixel
+        im[0, :, :] -= 103.939
+        im[1, :, :] -= 116.779
+        im[2, :, :] -= 123.68
+    else:
+        # 'RGB'->'BGR'
+        im = im[:, :, ::-1]
+        # Zero-center by mean pixel
+        im[:, :, 0] -= 103.939
+        im[:, :, 1] -= 116.779
+        im[:, :, 2] -= 123.68
     im = im.transpose((2, 0, 1))
     im = np.expand_dims(im, axis=0)
     inputs = [K.learning_phase()] + model.inputs
@@ -189,9 +225,21 @@ def get_image_descriptor_for_image(image, model):
 
 def get_conv_image_descriptor_for_image(image, model):
     im = cv2.resize(image, (224, 224)).astype(np.float32)
-    im[:, :, 0] -= 103.939
-    im[:, :, 1] -= 116.779
-    im[:, :, 2] -= 123.68
+    dim_ordering = K.image_dim_ordering()
+    if dim_ordering == 'th':
+        # 'RGB'->'BGR'
+        im = im[::-1, :, :]
+        # Zero-center by mean pixel
+        im[0, :, :] -= 103.939
+        im[1, :, :] -= 116.779
+        im[2, :, :] -= 123.68
+    else:
+        # 'RGB'->'BGR'
+        im = im[:, :, ::-1]
+        # Zero-center by mean pixel
+        im[:, :, 0] -= 103.939
+        im[:, :, 1] -= 116.779
+        im[:, :, 2] -= 123.68
     im = im.transpose((2, 0, 1))
     im = np.expand_dims(im, axis=0)
     inputs = [K.learning_phase()] + model.inputs

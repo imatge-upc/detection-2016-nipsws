@@ -6,7 +6,7 @@
 [logo-nips]: https://github.com/imatge-upc/detection-2016-nipsws/blob/master/logos/nips500x95.png?raw=true "NIPS 2016 logo"
 
 | ![Míriam Bellver][bellver-photo]  | ![Xavier Giro-i-Nieto][giro-photo]  | ![Ferran Marqués][marques-photo]  | ![Jordi Torres][torres-photo]  |
-|:-:|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|:-:|
 | [Míriam Bellver][bellver-web]  | [Xavier Giro-i-Nieto][giro-web]  |  [Ferran Marques][marques-web] | [Jordi Torres][torres-web]  |
 
 
@@ -23,7 +23,7 @@
 A joint collaboration between:
 
 |![logo-bsc] | ![logo-gpi]  |
-|:-:|:-:|:-:|
+|:-:|:-:|
 | [Barcelona Supercomputing Center][bsc-web] | [UPC Image Processing Group][gpi-web] |
 
 [gpi-web]: https://imatge.upc.edu/web/ 

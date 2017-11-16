@@ -61,7 +61,7 @@ booktitle = {Deep Reinforcement Learning Workshop, NIPS},
 month = {December},
 year = {2016}
 }
-```
+````
 
 You may also want to refer to our publication with the more human-friendly Chicago style:
 

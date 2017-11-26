@@ -87,7 +87,7 @@ def get_id_of_class_name (class_name):
         return 14
     elif class_name == 'person':
         return 15
-    elif class_name == 'pottedplan':
+    elif class_name == 'pottedplant':
         return 16
     elif class_name == 'sheep':
         return 17
